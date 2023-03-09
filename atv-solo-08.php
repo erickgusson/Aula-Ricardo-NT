@@ -64,11 +64,17 @@
             echo "<p> Seu salário irá de " . $salario . " para " . $reajuste . "</p>";
 
         } 
+
+        elseif (($classe == "i") or ($classe == "I") or ($classe == "j") or ($classe == "J")) {
+
+            $reajuste = $salario * 1.5;
+            echo "<p> Seu salário irá de " . $salario . " para " . $reajuste . "</p>";
+
+        } 
         
         else {
 
-            $reajuste = $salario * 1.50;
-            echo "<p> Seu salário irá de " . $salario . " para " . $reajuste . "</p>";
+            echo "<p>Categoria não existe </p>";
 
         }
 
